@@ -30,6 +30,7 @@
     --portfolio-text-color-hover: #F4F4FD;
     --footer-text-color: #F4F4FD;
     --footer-bg-color: #2E2F42;
+    --footer-social-link-bg-hover: #31D0AA;
     --btn-bg-color: #4D5AE5;
     --btn-color: #ffffff;
     --btn-bg-hover: #404BBF;
@@ -37,7 +38,7 @@
     --section-padding-top: 120px;
     --section-padding-bottom: 120px;
     --customers-icon-color: #8e8f99;
-    --social-link-bg-hover: #31D0AA;
+    --social-link-bg-hover: #404BBF;
 }
 
 body {
@@ -207,7 +208,7 @@ button {
     margin: 0 auto;
     max-width: 1440px;
     text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -540,6 +541,11 @@ button {
 .footer_social_wrapper {
     display: flex;
     flex-direction: column;
+}
+
+.footer_social_link:hover,
+.footer_social_link:focus {
+    background-color: var(--footer-social-link-bg-hover);
 }
 
 .social_title {
